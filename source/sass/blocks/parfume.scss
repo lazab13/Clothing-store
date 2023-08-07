@@ -1,0 +1,95 @@
+.parfume {
+  padding-bottom: 69px;
+}
+
+.parfume__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.parfume__item {
+  color: #ffffff;
+  padding: 36px 24px 69px 24px;
+}
+
+.parfume__item--maison {
+  background-color: #ada6a6;
+  background-image: url("../img/maison-francis.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parfume__item--vranjes {
+  background-color: #ada6a6;
+  background-image: url("../img/vranjes.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parfume__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  margin-left: auto;
+  margin-bottom: 190px;
+  padding: 22px 18px 23px 17px;
+  width: 181px;
+  border-radius: 72px;
+  border: 1px solid #ffffff;
+}
+
+.parfume__title--color {
+  color: #333333;
+  border: 1px solid #333333;
+  margin: 0;
+  margin-right: auto;
+  margin-bottom: 143px;
+}
+
+.parfume__text {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: right;
+  margin: 0;
+  margin-bottom: 38px;
+}
+
+.parfume__text--position {
+  text-align: left;
+}
+
+.parfume__link {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: right;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  width: 105px;
+  padding: 0 10px 14px 10px;
+  border-bottom: 1px solid #ffffff;
+  margin-left: auto;
+}
+
+.parfume__link--position {
+  text-align: left;
+  margin: 0;
+  margin-right: auto;
+}
+
+.collection__link:hover {
+  opacity: 0.7;
+}
+
+.collection__link:active {
+  opacity: 0.5;
+}

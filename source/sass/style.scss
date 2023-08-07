@@ -1,0 +1,26 @@
+// Общие свойства для 3-х страниц
+@import "varibles";
+@import "global";
+@import "font";
+@import "./blocks/page";
+@import "./blocks/main-header";
+@import "./blocks/site-list.scss";
+@import "./blocks/address.scss";
+@import "./blocks/social.scss";
+@import "./blocks/link.scss";
+@import "./blocks/main-footer.scss";
+
+// Index
+@import "./blocks/gallery.scss";
+@import "./blocks/pagination.scss";
+@import "./blocks/promo.scss";
+@import "./blocks/brands.scss";
+@import "./blocks/preview.scss";
+@import "./blocks/brands-list.scss";
+@import "./blocks/certificate.scss";
+@import "./blocks/collection.scss";
+@import "./blocks/buyers.scss";
+@import "./blocks/parfume.scss";
+@import "./blocks/tailoring.scss";
+@import "./blocks/cooperation.scss";
+

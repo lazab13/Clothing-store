@@ -1,0 +1,56 @@
+.main-footer {
+  padding: 32px 22px 38px 22px;
+}
+
+.main-footer__link {
+  display: block;
+  width: 180px;
+  margin: 0 auto;
+  margin-bottom: 53px;
+}
+
+.main-footer__adress {
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.main-footer__map-link {
+  display: block;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 18px;
+  text-transform: lowercase;
+  color: #bb3024;
+  width: 95px;
+  margin: 0 auto;
+  margin-bottom: 28px;
+}
+
+.main-footer__social {
+  width: 124px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.main-footer__tel {
+  display: block;
+  font-size: 16px;
+  color: #353535;
+  text-decoration: none;
+  width: 126px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+
+.main-footer__work-time {
+  font-size: 12px;
+  font-weight: 300;
+  width: 151px;
+  margin: 0 auto;
+}
+
+.main-footer__work-time--bold {
+  font-weight: 500;
+}

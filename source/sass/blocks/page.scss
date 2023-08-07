@@ -1,0 +1,32 @@
+.page {
+  height: 100%;
+}
+
+.page__body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: $muller;
+}
+
+.page__container {
+  width: 428px;
+  margin: 0 auto;
+
+  @media (min-width: $desctop-width) {
+    width: 1920px;
+  }
+}
+
+.page__main-container {
+  flex-grow: 1;
+}
+
+.page__wrapper {
+  @media (min-width: $desctop-width) {
+    display: flex;
+    padding-bottom: 106px;
+  }
+}

@@ -1,5 +1,9 @@
 .parfume {
   padding-bottom: 69px;
+
+  @media (min-width: $desctop-width) {
+    padding: 0;
+  }
 }
 
 .parfume__list {
@@ -8,11 +12,20 @@
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: $desctop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .parfume__item {
   color: #ffffff;
   padding: 36px 24px 69px 24px;
+
+  @media (min-width: $desctop-width) {
+    padding: 72px 115px 76px 115px;
+  }
 }
 
 .parfume__item--maison {
@@ -20,6 +33,10 @@
   background-image: url("../img/maison-francis.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-width: $desctop-width) {
+    background-image: url("../img/maison-francis-desctop.png");
+  }
 }
 
 .parfume__item--vranjes {
@@ -27,6 +44,10 @@
   background-image: url("../img/vranjes.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-width: $desctop-width) {
+    background-image: url("../img/vranjes-desctop.png");
+  }
 }
 
 .parfume__title {
@@ -42,6 +63,10 @@
   width: 181px;
   border-radius: 72px;
   border: 1px solid #ffffff;
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 393px;
+  }
 }
 
 .parfume__title--color {
@@ -50,6 +75,10 @@
   margin: 0;
   margin-right: auto;
   margin-bottom: 143px;
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 393px;
+  }
 }
 
 .parfume__text {
@@ -59,6 +88,12 @@
   text-align: right;
   margin: 0;
   margin-bottom: 38px;
+
+  @media (min-width: $desctop-width) {
+    font-size: 35px;
+    line-height: 42px;
+    margin-bottom: 50px;
+  }
 }
 
 .parfume__text--position {

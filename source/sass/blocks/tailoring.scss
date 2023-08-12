@@ -1,5 +1,20 @@
 .tailoring {
   padding-bottom: 41px;
+
+  @media (min-width: $desctop-width) {
+    position: relative;
+    padding: 76px 195px 196px 195px;
+  }
+}
+
+.tailoring__layout {
+  @media (min-width: $desctop-width) {
+    position: relative;
+    display: flex;
+    padding: 93px 100px 145px;
+    background-color: #fbfbfb;
+    border: 0.7px solid #d9d9d9;
+  }
 }
 
 .tailoring__title {
@@ -11,6 +26,14 @@
   margin: 0;
   padding: 0 24px;
   margin-bottom: 25px;
+
+  @media (min-width: $desctop-width) {
+    font-size: 55px;
+    line-height: 77px;
+    width: 525px;
+    margin-bottom: 15px;
+    padding: 0;
+  }
 }
 
 .tailoring__title-color {
@@ -24,6 +47,14 @@
   margin: 0;
   padding: 0 24px;
   margin-bottom: 25px;
+
+  @media (min-width: $desctop-width) {
+    font-size: 20px;
+    line-height: 28px;
+    width: 429px;
+    padding: 0;
+    margin-bottom: 40px;
+  }
 }
 
 .tailoring__technology {
@@ -33,12 +64,39 @@
   margin: 0;
   padding: 0 24px;
   margin-bottom: 25px;
+
+  @media (min-width: $desctop-width) {
+    font-size: 20px;
+    line-height: 28px;
+    width: 485px;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .tailoring__image {
   display: block;
   margin: 0 auto;
   margin-bottom: 41px;
+
+  @media (min-width: $desctop-width) {
+    position: absolute;
+    margin: 0;
+    width: 1213px;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.tailoring__row {
+  @media (min-width: $desctop-width) {
+    position: absolute;
+    display: flex;
+    width: 1430px;
+    bottom: 100px;
+    left: 195px;
+    z-index: 1;
+  }
 }
 
 .tailoring__advantages {
@@ -48,12 +106,31 @@
   margin: 0;
   padding: 0 48px 47px 48px;
   gap: 25px;
+
+  @media (min-width: $desctop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+    gap: 0;
+    border: 0.7px solid #d9d9d9;
+  }
 }
 
 .tailoring__item {
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
+
+  @media (min-width: $desctop-width) {
+    background-color: #ffffff;
+    padding: 56px 10px 51px 14px;
+    border-left: 0.7px solid #d9d9d9;
+    align-items: center;
+  }
+}
+
+.tailoring__item:first-child {
+  border-left: none;
 }
 
 .tailoring__text-advantages {
@@ -72,4 +149,21 @@
 
 .tailoring__wrapper {
   padding: 0 24px;
+
+  @media (min-width: $desctop-width) {
+    padding: 0;
+  }
+}
+
+.tailoring__link {
+  @media (min-width: $desctop-width) {
+    font-size: 14px;
+    line-height: 19px;
+    gap: 35px;
+    padding: 59px 91px;
+    border: 0;
+    border-radius: 0;
+    color: #ffffff;
+    background-color: #bb3024;
+  }
 }

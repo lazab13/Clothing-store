@@ -1,0 +1,33 @@
+.tailoring-promo {
+  position: relative;
+  background-image: url("../img/tailoring-promo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000000;
+  padding: 439px 88px 143px 88px;
+}
+
+.tailoring-promo__title {
+  font-weight: 250;
+  font-size: 55px;
+  line-height: 77px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.tailoring-promo__text {
+  display: block;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.tailoring-promo__link {
+  position: absolute;
+  width: 380px;
+  bottom: -67px;
+  left: 25px;
+}

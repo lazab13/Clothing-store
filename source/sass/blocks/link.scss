@@ -47,19 +47,26 @@
   transform-origin: top right;
 }
 
-.link__wrapper--tailoring {
+.link__wrapper--tailoring,
+.link__wrapper--certificate-advantages {
   @media (min-width: $desctop-width) {
     background-color: #ffffff;
     box-shadow: (0 10px 31px #812119);
   }
 }
 
-.link__wrapper--tailoring::after {
-  background-color: #bb3024;
+.link__wrapper--tailoring::after,
+.link__wrapper--certificate-advantages::after {
+  @media (min-width: $desctop-width) {
+    background-color: #bb3024;
+  }
 }
 
-.link__wrapper--tailoring::before {
-  background-color: #bb3024;
+.link__wrapper--tailoring::before,
+.link__wrapper--certificate-advantages::before {
+  @media (min-width: $desctop-width) {
+    background-color: #bb3024;
+  }
 }
 
 .link__text--promo {

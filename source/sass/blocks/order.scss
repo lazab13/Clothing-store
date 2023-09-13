@@ -1,5 +1,9 @@
 .order {
   padding: 63px 24px 123px;
+
+  @media (min-width: $desctop-width) {
+    padding: 91px 295px 58px;
+  }
 }
 
 .order__title {
@@ -9,7 +13,12 @@
   text-transform: uppercase;
   color: #353535;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 65px;
+
+  @media (min-width: $desctop-width) {
+    text-align: center;
+    margin-bottom: 70px;
+  }
 }
 
 .order__list {
@@ -20,10 +29,21 @@
   margin: 0;
   margin-bottom: 60px;
   counter-reset: index;
+
+  @media (min-width: $desctop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 38px;
+    row-gap: 90px;
+  }
 }
 
 .order__list li:nth-child(2n) {
   text-align: right;
+
+  @media (min-width: $desctop-width) {
+    text-align: center;
+  }
 }
 
 .order__item {
@@ -41,6 +61,13 @@
     color: #dfdfdf;
     top: 0;
     left: 65px;
+
+    @media (min-width: $desctop-width) {
+      width: 55px;
+      height: 64px;
+      left: 55%;
+      transform: translateX(-50%);
+    }
   }
 
   &::after {
@@ -52,16 +79,39 @@
     color: #dfdfdf;
     top: 0;
     left: 0;
+
+    @media (min-width: $desctop-width) {
+      width: 55px;
+      height: 64px;
+      left: 40%;
+      transform: translateX(-50%);
+    }
+  }
+
+  @media (min-width: $desctop-width) {
+    text-align: center;
+    padding: 75px 50px 0;
   }
 }
 
 .order__item:nth-child(2n)::before {
   left: 0;
   right: 0;
+
+  @media (min-width: $desctop-width) {
+    left: 55%;
+    transform: translateX(-50%);
+  }
 }
 
 .order__item:nth-child(2n)::after {
   right: 57px;
+
+  @media (min-width: $desctop-width) {
+    left: 40%;
+    right: 0;
+    transform: translateX(-50%);
+  }
 }
 
 .order__title-another {
@@ -99,6 +149,14 @@
   padding: 43px 23px 122px;
   border: 0.7px solid #d9d9d9;
   background-color: #fbfbfb;
+
+  @media (min-width: $desctop-width) {
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 79px 84px 79px 82px;
+  }
 }
 
 .order__discription {
@@ -106,6 +164,10 @@
   font-size: 24px;
   line-height: 26px;
   margin: 0;
+
+  @media (min-width: $desctop-width) {
+    width: 728px;
+  }
 }
 
 .order__link {
@@ -113,4 +175,9 @@
   width: 101%;
   bottom: -66px;
   left: -2px;
+
+  @media (min-width: $desctop-width) {
+    position: static;
+    width: 398px;
+  }
 }

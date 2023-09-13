@@ -1,13 +1,24 @@
 .main-header {
-  width: 404px;
-  padding: 18px 0 60px 0;
-  display: none;
+  position: relative;
+  padding: 18px 24px 11px;
+  border-bottom: 0.5px solid #d9d9d9;
+
+  @media (min-width: $desctop-width) {
+    position: static;
+    display: flex;
+    align-items: center;
+    padding: 0 195px;
+  }
 }
 
 .main-header__link {
   display: block;
   width: 121px;
   height: 38px;
+
+  @media (min-width: $desctop-width) {
+    margin-right: 51px;
+  }
 }
 
 .main-header__link:hover {
@@ -16,37 +27,4 @@
 
 .main-header__link:active {
   opacity: 0.5;
-}
-
-.main-header__wrapper {
-  display: flex;
-  justify-content: space-around;
-  padding-top: 29px;
-  gap: 22px;
-}
-
-.main-header__map-link {
-  display: block;
-  color: #bb3024;
-  font-size: 11px;
-  font-weight: 300;
-  line-height: 18px;
-  text-transform: lowercase;
-}
-
-.main-header__tel {
-  font-size: 16px;
-  color: #353535;
-  text-decoration: none;
-  margin-bottom: 7px;
-}
-
-.main-header__work-time {
-  font-size: 12px;
-  font-weight: 300;
-  margin: 0;
-}
-
-.main-header__work-time--bold {
-  font-weight: 500;
 }

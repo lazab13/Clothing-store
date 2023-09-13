@@ -3,9 +3,6 @@
   font-size: 13px;
   line-height: 18px;
   font-style: normal;
-  width: 178px;
-  margin-top: 44px;
-  margin-bottom: 15px;
 }
 
 .address::after {
@@ -15,8 +12,14 @@
   background-repeat: no-repeat;
   width: 34px;
   height: 34px;
-  top: -40px;
+  top: -46px;
   left: 0;
+
+  @media (min-width: $desctop-width) {
+    top: 0;
+    left: -55px;
+    transform: none;
+  }
 }
 
 .address--promo {

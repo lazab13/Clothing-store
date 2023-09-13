@@ -14,9 +14,20 @@
 .page__container {
   width: 428px;
   margin: 0 auto;
+  box-shadow: 1px 8px 34px 7px rgba(180, 182, 189, 0.92);
 
   @media (min-width: $desctop-width) {
     width: 1920px;
+  }
+}
+
+.page__container--certificate {
+  position: relative;
+}
+
+.page__container--tailoring {
+  @media (min-width: $desctop-width) {
+    position: relative;
   }
 }
 

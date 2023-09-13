@@ -1,5 +1,13 @@
 .tailoring-advantages {
   padding: 0 24px 48px;
+
+  @media (min-width: $desctop-width) {
+    position: absolute;
+    width: 1140px;
+    padding: 0;
+    top: 23%;
+    left: 457px;
+  }
 }
 
 .tailoring-advantages__list {
@@ -12,11 +20,25 @@
   border-radius: 3px;
   border: 1px solid #d9d9d9;
   background-color: #000000b3;
+
+  @media (min-width: $desctop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 120px;
+    padding: 38px 37px 45px 83px;
+    border: 1px solid #948f8f;
+    background: rgba(0, 0, 0, 0.7);
+  }
 }
 
 .tailoring-advantages__item {
   padding: 35px 25px;
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $desctop-width) {
+    padding: 0;
+    border: none;
+  }
 }
 
 .tailoring-advantages__item:last-child {
@@ -31,6 +53,12 @@
   text-align: center;
   width: 350px;
   margin-bottom: 8px;
+
+  @media (min-width: $desctop-width) {
+    width: 207px;
+    margin-bottom: 27px;
+    text-align: left;
+  }
 }
 
 .tailoring-advantages__text {
@@ -38,4 +66,10 @@
   line-height: 19px;
   text-align: center;
   margin: 0;
+
+  @media (min-width: $desctop-width) {
+    font-size: 19px;
+    line-height: 21px;
+    text-align: left;
+  }
 }

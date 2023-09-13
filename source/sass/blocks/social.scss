@@ -10,3 +10,12 @@
     gap: 13px;
   }
 }
+
+.social--main-nav {
+  margin-bottom: 14px;
+
+  @media (min-width: $desctop-width) {
+    order: 1;
+    margin: 0;
+  }
+}

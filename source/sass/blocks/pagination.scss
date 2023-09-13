@@ -18,8 +18,12 @@
   height: 10px;
   border: none;
   border-radius: 50%;
-  background-color: #bb3024;
+  background-color: #c5c0bf;
   cursor: pointer;
+}
+
+.pagination__toogle--active {
+  background-color: #bb3024;
 }
 
 .pagination__toogle:hover {

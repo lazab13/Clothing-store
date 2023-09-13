@@ -5,6 +5,12 @@
   background-size: cover;
   background-color: #000000;
   padding: 439px 88px 143px 88px;
+
+  @media (min-width: $desctop-width) {
+    position: static;
+    background-image: url("../img/tailoring-promo-desctop.png");
+    padding: 227px 195px 196px;
+  }
 }
 
 .tailoring-promo__title {
@@ -23,6 +29,11 @@
   line-height: 28px;
   text-align: center;
   color: #ffffff;
+
+  @media (min-width: $desctop-width) {
+    text-align: left;
+    margin-bottom: 35px;
+  }
 }
 
 .tailoring-promo__link {
@@ -30,4 +41,8 @@
   width: 380px;
   bottom: -67px;
   left: 25px;
+
+  @media (min-width: $desctop-width) {
+    position: static;
+  }
 }

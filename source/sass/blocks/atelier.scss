@@ -1,5 +1,28 @@
 .atelier {
   padding: 121px 24px 59px;
+
+  @media (min-width: $desctop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+}
+
+.atelier__image {
+  display: none;
+
+  @media (min-width: $desctop-width) {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.atelier__wrapper {
+  @media (min-width: $desctop-width) {
+    width: 1105px;
+    padding: 80px 80px 158px 160px;
+  }
 }
 
 .atelier__title {
@@ -9,6 +32,12 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 17px;
+
+  @media (min-width: $desctop-width) {
+    font-size: 35px;
+    line-height: 45px;
+    width: 730px;
+  }
 }
 
 .atelier__title-bold {
@@ -22,11 +51,19 @@
   color: #414141;
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: $desctop-width) {
+    width: 743px;
+  }
 }
 
 .atelier__text--bold {
   font-weight: 700;
   margin-bottom: 48px;
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 25px;
+  }
 }
 
 .atelier__button {
@@ -41,4 +78,26 @@
   border: 0.7px solid #d9d9d9;
   background-color: #fbfbfb;
   cursor: pointer;
+
+  @media (min-width: $desctop-width) {
+    display: none;
+  }
+}
+
+.atelier__description {
+  display: none;
+
+  @media (min-width: $desctop-width) {
+    display: block;
+    font-size: 16px;
+    line-height: 22px;
+    width: 743px;
+    margin: 0;
+  }
+}
+
+.atelier__description--margin {
+  @media (min-width: $desctop-width) {
+    margin-bottom: 20px;
+  }
 }

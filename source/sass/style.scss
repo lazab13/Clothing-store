@@ -1,0 +1,42 @@
+// Общие свойства для 3-х страниц
+@import "varibles";
+@import "global";
+@import "font";
+@import "./blocks/page";
+@import "./blocks/main-header";
+@import "./blocks/main-nav.scss";
+@import "./blocks/site-list.scss";
+@import "./blocks/address.scss";
+@import "./blocks/social.scss";
+@import "./blocks/link.scss";
+@import "./blocks/main-footer.scss";
+
+// Index
+@import "./blocks/gallery.scss";
+@import "./blocks/pagination.scss";
+@import "./blocks/promo.scss";
+@import "./blocks/brands.scss";
+@import "./blocks/preview.scss";
+@import "./blocks/brands-list.scss";
+@import "./blocks/certificate.scss";
+@import "./blocks/collection.scss";
+@import "./blocks/buyers.scss";
+@import "./blocks/parfume.scss";
+@import "./blocks/tailoring.scss";
+@import "./blocks/cooperation.scss";
+
+// Tailoring
+@import "./blocks/tailoring-promo.scss";
+@import "./blocks/atelier.scss";
+@import "./blocks/tailoring-advantages.scss";
+@import "./blocks/fabrics.scss";
+@import "./blocks/assembling.scss";
+@import "./blocks/patterns.scss";
+@import "./blocks/technology.scss";
+@import "./blocks/order.scss";
+@import "./blocks/store-gallery.scss";
+
+// Сertificate
+@import "./blocks/certificate-promo.scss";
+@import "./blocks/certificate-advantages.scss";
+@import "./blocks/popover.scss";

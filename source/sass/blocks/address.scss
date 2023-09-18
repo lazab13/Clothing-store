@@ -1,0 +1,56 @@
+.address {
+  position: relative;
+  font-size: 13px;
+  line-height: 18px;
+  font-style: normal;
+}
+
+.address::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/map-pin.svg");
+  background-repeat: no-repeat;
+  width: 34px;
+  height: 34px;
+  top: -46px;
+  left: 0;
+
+  @media (min-width: $desctop-width) {
+    top: 0;
+    left: -55px;
+    transform: none;
+  }
+}
+
+.address--promo {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #353535;
+  width: 100%;
+  margin: 0;
+  padding-left: 48px;
+  margin-bottom: 29px;
+}
+
+.address--promo::after {
+  top: 0;
+  left: 0;
+}
+
+.address--footer {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.address--footer::after {
+  top: -25px;
+  left: 45%;
+  transform: translateY(-50%);
+
+  @media (min-width: $desctop-width) {
+    top: 0;
+    left: -55px;
+    transform: none;
+  }
+}

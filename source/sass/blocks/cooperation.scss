@@ -1,0 +1,153 @@
+.cooperation {
+  background-color: #fbfbfb;
+  border-top: 1px solid #c4bdbd;
+
+  @media (min-width: $desctop-width) {
+    position: relative;
+    padding: 47px 195px 215px 715px;
+    border: none;
+  }
+}
+
+.cooperation__wrapper {
+  padding: 55px 24px 0 24px;
+
+  @media (min-width: $desctop-width) {
+    position: relative;
+    padding: 88px 34px 142px 50px;
+    border: 0.7px solid #d9d9d9;
+  }
+}
+
+.cooperation__title {
+  font-weight: 250;
+  font-size: 24px;
+  line-height: 33px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #353535;
+  margin: 0;
+  margin-bottom: 23px;
+
+  @media (min-width: $desctop-width) {
+    font-size: 35px;
+    line-height: 49px;
+    text-align: left;
+    margin-bottom: 23px;
+  }
+}
+
+.cooperation__title br {
+  @media (min-width: $desctop-width) {
+    display: none;
+  }
+}
+
+.cooperation__title-bold {
+  font-weight: 500;
+}
+
+.cooperation__description {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #bb3024;
+  margin: 0;
+  margin-bottom: 41px;
+
+  @media (min-width: $desctop-width) {
+    text-align: left;
+    margin-bottom: 34px;
+  }
+}
+
+.cooperation__description-bold {
+  font-weight: 500;
+}
+
+.cooperation__advantages {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 43px;
+
+  @media (min-width: $desctop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 159px;
+    row-gap: 34px;
+    margin: 0;
+  }
+}
+
+.cooperation__item--order {
+  @media (min-width: $desctop-width) {
+    order: 1;
+  }
+}
+
+.cooperation__text {
+  position: relative;
+  font-size: 16px;
+  line-height: 22px;
+  padding-left: 53px;
+  margin: 0;
+  color: #414141;
+
+  @media (min-width: $desctop-width) {
+    width: 362px;
+  }
+}
+
+.cooperation__text--another {
+  padding-top: 10px;
+}
+
+.cooperation__text::before {
+  content: "";
+  position: absolute;
+  width: 39px;
+  height: 39px;
+  border-radius: 50%;
+  border: 1px solid #bb3024;
+  top: 0;
+  left: 0;
+}
+
+.cooperation__text::after {
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  background-image: url("../img/cooperation-check-mark.svg");
+  background-repeat: no-repeat;
+  top: 12px;
+  left: 11px;
+}
+
+.cooperation__link {
+  @media (min-width: $desctop-width) {
+    position: absolute;
+    width: 398px;
+    bottom: -63px;
+    right: 89px;
+  }
+}
+
+.cooperation__image {
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: $desctop-width) {
+    position: absolute;
+    width: 1300px;
+    margin: 0;
+    bottom: 0;
+    left: 25px;
+  }
+}
+

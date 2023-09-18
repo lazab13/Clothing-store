@@ -1,0 +1,128 @@
+.main-footer {
+  padding: 32px 22px 38px 22px;
+
+  @media (min-width: $desctop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 250px 0 195px;
+    border-top: 0.5px solid #d9d9d9;
+  }
+}
+
+.main-footer--another {
+  border-top: 0.5px solid #d9d9d9;
+  background-color: #fbfbfb;
+}
+
+.main-footer__link {
+  display: block;
+  width: 180px;
+  margin: 0 auto;
+  margin-bottom: 53px;
+
+  @media (min-width: $desctop-width) {
+    width: 178px;
+    margin: 0;
+    margin-right: 51px;
+    padding: 32px 0 47px 0;
+  }
+}
+
+.main-footer__nav {
+  display: none;
+
+  @media (min-width: $desctop-width) {
+    display: block;
+  }
+}
+
+.main-footer__wrapper {
+  @media (min-width: $desctop-width) {
+    padding: 20px 30px 51px 79px;
+  }
+}
+
+.main-footer__adress {
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 10px;
+
+  @media (min-width: $desctop-width) {
+    text-align: left;
+    width: 286px;
+  }
+}
+
+.main-footer__adress br {
+  @media (min-width: $desctop-width) {
+    display: none;
+  }
+}
+
+.main-footer__map-link {
+  display: block;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 18px;
+  text-transform: lowercase;
+  color: #bb3024;
+  width: 95px;
+  margin: 0 auto;
+  margin-bottom: 28px;
+
+  @media (min-width: $desctop-width) {
+    margin: 0;
+  }
+}
+
+.main-footer__box {
+  @media (min-width: $desctop-width) {
+    padding: 13px 0 44px 0;
+  }
+}
+
+.main-footer__social {
+  width: 124px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+
+  @media (min-width: $desctop-width) {
+    width: 130px;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+}
+
+.main-footer__tel {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  color: #353535;
+  text-decoration: none;
+  width: 128px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+
+  @media (min-width: $desctop-width) {
+    text-align: left;
+    width: 130px;
+    margin: 0;
+  }
+}
+
+.main-footer__work-time {
+  font-size: 12px;
+  font-weight: 300;
+  width: 151px;
+  margin: 0 auto;
+
+  @media (min-width: $desctop-width) {
+    text-align: left;
+    margin: 0;
+  }
+}
+
+.main-footer__work-time--bold {
+  font-weight: 500;
+}

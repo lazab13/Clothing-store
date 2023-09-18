@@ -1,0 +1,39 @@
+.technology {
+  padding: 157px 33px 82px 49px;
+  background-image: url("../img/technology.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000000;
+  color: #ffffff;
+
+  @media (min-width: $desctop-width) {
+    padding: 360px 800px 166px 325px;
+    background-image: url("../img/technology-desctop.png");
+  }
+}
+
+.technology__title {
+  font-weight: 250;
+  font-size: 35px;
+  line-height: 42px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 15px;
+
+  @media (min-width: $desctop-width) {
+    line-height: 49px;
+    margin-bottom: 17px;
+  }
+}
+
+.technology__text {
+  font-size: 16px;
+  line-height: 22px;
+  width: 281px;
+  margin: 0;
+
+  @media (min-width: $desctop-width) {
+    font-weight: 500;
+    width: 510px;
+  }
+}

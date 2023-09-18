@@ -1,0 +1,43 @@
+.page {
+  height: 100%;
+}
+
+.page__body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: $muller;
+}
+
+.page__container {
+  width: 428px;
+  margin: 0 auto;
+  box-shadow: 1px 8px 34px 7px rgba(180, 182, 189, 0.92);
+
+  @media (min-width: $desctop-width) {
+    width: 1920px;
+  }
+}
+
+.page__container--certificate {
+  position: relative;
+}
+
+.page__container--tailoring {
+  @media (min-width: $desctop-width) {
+    position: relative;
+  }
+}
+
+.page__main-container {
+  flex-grow: 1;
+}
+
+.page__wrapper {
+  @media (min-width: $desctop-width) {
+    display: flex;
+    padding-bottom: 106px;
+  }
+}

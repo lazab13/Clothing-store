@@ -1,0 +1,51 @@
+.assembling {
+  @media (min-width: $desctop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.assembling__wrapper {
+  padding: 47px 22px 53px 27px;
+
+  @media (min-width: $desctop-width) {
+    width: 870px;
+    padding: 183px 35px 392px 325px;
+  }
+}
+
+.assembling__title {
+  font-weight: 250;
+  font-size: 35px;
+  line-height: 42px;
+  color: #353535;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 15px;
+
+  @media (min-width: $desctop-width) {
+    line-height: 45px;
+    margin-bottom: 15px;
+  }
+}
+
+.assembling__text {
+  font-size: 16px;
+  line-height: 22px;
+  color: #414141;
+  margin: 0;
+
+  @media (min-width: $desctop-width) {
+    font-weight: 500;
+  }
+}
+
+.assembling__image {
+  display: block;
+
+  @media (min-width: $desctop-width) {
+    height: 100%;
+    width: 1050px;
+    object-fit: cover;
+  }
+}

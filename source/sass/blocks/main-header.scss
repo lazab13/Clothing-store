@@ -19,12 +19,12 @@
   @media (min-width: $desctop-width) {
     margin-right: 51px;
   }
-}
 
-.main-header__link:hover {
-  opacity: 0.7;
-}
+  &:hover {
+    opacity: 0.7;
+  }
 
-.main-header__link:active {
-  opacity: 0.5;
+  &:active {
+    opacity: 0.5;
+  }
 }

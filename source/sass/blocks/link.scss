@@ -12,6 +12,48 @@
   border: 0.7px solid #d9d9d9;
   background-color: #fbfbfb;
   padding: 24px 24px 24px 37px;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #000000;
+    border: 0.7px solid #000000;
+    box-shadow: 0 4px 25px 12px rgba(216, 224, 248, 0.27);
+    transition: all 0.3s;
+  }
+
+  &:hover .link__wrapper {
+    background-color: #ffffff;
+    box-shadow: 0 4px 25px 12px rgba(216, 224, 248, 0.27);
+  }
+
+  &:hover .link__wrapper::before {
+    background-color: #000000;
+  }
+
+  &:hover .link__wrapper::after {
+    background-color: #000000;
+  }
+
+  &:active {
+    color: #bb3024;
+    background-color: #fbfbfb;
+    border: 0.7px solid #d9d9d9;
+    box-shadow: 0 4px 25px 12px rgba(223, 52, 26, 0.27);
+    transition: none;
+  }
+
+  &:active .link__wrapper {
+    background-color: #bb3024;
+    box-shadow: (0 10px 31px rgba(187, 48, 36, 0.5));
+  }
+
+  &:active .link__wrapper::before {
+    background-color: #ffffff;
+  }
+
+  &:active .link__wrapper::after {
+    background-color: #ffffff;
+  }
 }
 
 .link__wrapper {
@@ -45,6 +87,43 @@
   width: 25px;
   transform: rotate(-45deg);
   transform-origin: top right;
+}
+
+.link--tailoring {
+  @media (min-width: $desctop-width) {
+    font-size: 14px;
+    line-height: 19px;
+    gap: 35px;
+    padding: 59px 91px;
+    border: 0;
+    border-radius: 0;
+    color: #ffffff;
+    background-color: #bb3024;
+  }
+
+  &:hover {
+    border: none;
+  }
+}
+
+.link--certificate-advantages {
+  @media (min-width: $desctop-width) {
+    position: absolute;
+    font-size: 14px;
+    line-height: 19px;
+    gap: 66px;
+    padding: 68px 30px;
+    border: none;
+    border-radius: 0;
+    color: #ffffff;
+    background-color: #bb3024;
+    bottom: 75px;
+    right: 0;
+
+    &:hover {
+      border: none;
+    }
+  }
 }
 
 .link__wrapper--tailoring,

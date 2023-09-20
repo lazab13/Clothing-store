@@ -1,0 +1,56 @@
+.fabrics {
+  background-image: url("../img/tailoring/fabrics.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  background-color: #000000;
+  padding: 176px 32px 68px 25px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/tailoring/fabrics@2x.png");
+  }
+
+  @media (min-width: $desctop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: none;
+    padding: 0;
+  }
+}
+
+.fabrics__wrapper {
+  @media (min-width: $desctop-width) {
+    width: 850px;
+    padding: 271px 41px 173px 325px;
+  }
+}
+
+.fabrics__title {
+  font-weight: 250;
+  font-size: 35px;
+  line-height: 42px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 15px;
+
+  @media (min-width: $desctop-width) {
+    line-height: 49px;
+    margin-bottom: 17px;
+  }
+}
+
+.fabrics__teext {
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+}
+
+.fabrics__image {
+  display: none;
+
+  @media (min-width: $desctop-width) {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+  }
+}

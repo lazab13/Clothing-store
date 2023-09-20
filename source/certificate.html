@@ -120,10 +120,10 @@
 
         <picture>
           <source media="(min-width: 1920px)"
-            srcset="img/certificate-promo-image-desctop.jpg 1x, img/certificate-promo-image-desctop@2x.jpg 2x">
+            srcset="img/certificate/certificate-promo-image-desctop.jpg 1x, img/certificate/certificate-promo-image-desctop@2x.jpg 2x">
 
-          <img class="certificate-promo__image" src="img/certificate-promo-image.jpg" width="383" height="219"
-            srcset="img/certificate-promo-image@2x.jpg 2x" alt="Подарочный сертификат.">
+          <img class="certificate-promo__image" src="img/certificate/certificate-promo-image.jpg" width="383"
+            height="219" srcset="img/certificate/certificate-promo-image@2x.jpg 2x" alt="Подарочный сертификат.">
         </picture>
 
         <div class="certificate-promo__wrapper">
@@ -132,7 +132,7 @@
               Artigiani</span>
           </p>
 
-          <a class="certificate-promo__link link" href="#">
+          <a class="certificate-promo__link link link--open-popover" href="#">
             <span class="link__text">
               Купить сертификат
             </span>
@@ -166,10 +166,11 @@
 
             <picture>
               <source media="(min-width: 1920px)"
-                srcset="img/certificate-advantages-image-desctop.png 1x, img/certificate-advantages-image-desctop@2x.png 2x">
+                srcset="img/certificate/certificate-advantages-image-desctop.png 1x, img/certificate/certificate-advantages-image-desctop@2x.png 2x">
 
-              <img class="certificate-advantages__image" src="img/certificate-advantages-image.png" width="320"
-                height="371" srcset="img/certificate-advantages-image@2x.png" alt="Фото мужчины для фона.">
+              <img class="certificate-advantages__image" src="img/certificate/certificate-advantages-image.png"
+                width="320" height="371" srcset="img/certificate/certificate-advantages-image@2x.png"
+                alt="Фото мужчины для фона.">
             </picture>
           </div>
 
@@ -181,10 +182,11 @@
 
               <picture>
                 <source media="(min-width: 1920px)"
-                  srcset="img/certificate-image-desctop.jpg 1x, img/certificate-image-desctop@2x.jpg 2x">
+                  srcset="img/certificate/certificate-image-desctop.jpg 1x, img/certificate/certificate-image-desctop@2x.jpg 2x">
 
-                <img class="certificate-advantages__certificate-image" src="img/certificate-image.jpg" width="380"
-                  height="235" srcset="img/certificate-image@2x.jpg 2x" alt="Cертификат на сумму.">
+                <img class="certificate-advantages__certificate-image" src="img/certificate/certificate-image.jpg"
+                  width="380" height="235" srcset="img/certificate/certificate-image@2x.jpg 2x"
+                  alt="Cертификат на сумму.">
               </picture>
             </div>
 
@@ -195,10 +197,11 @@
 
               <picture>
                 <source media="(min-width: 1920px)"
-                  srcset="img/certificate-image-desctop.jpg 1x, img/certificate-image-desctop@2x.jpg 2x">
+                  srcset="img/certificate/certificate-image-desctop.jpg 1x, img/certificate/certificate-image-desctop@2x.jpg 2x">
 
-                <img class="certificate-advantages__certificate-image" src="img/certificate-image.jpg" width="380"
-                  height="235" srcset="img/certificate-image@2x.jpg 2x" alt="Cертификат на пошив.">
+                <img class="certificate-advantages__certificate-image" src="img/certificate/certificate-image.jpg"
+                  width="380" height="235" srcset="img/certificate/certificate-image@2x.jpg 2x"
+                  alt="Cертификат на пошив.">
               </picture>
             </div>
           </div>
@@ -249,7 +252,7 @@
             </li>
           </ul>
 
-          <a class="certificate-advantages__link link" href="#">
+          <a class="certificate-advantages__link link link--open-popover link--certificate-advantages" href="#">
             <span class="link__text">
               Купить сертификат
             </span>
@@ -258,16 +261,14 @@
             </div>
           </a>
         </div>
-
-
       </section>
 
-      <section class="certificate-popover popover popover--active">
+      <section class="certificate-popover popover popover--closed popover--opened">
         <h1 class="visually-hidden">
           Форма записи
         </h1>
 
-        <button class="popover__toogle popover__togle--closed">
+        <button class="popover__toogle popover__toogle--closed">
           <span class="visually-hidden">
             Закрыть окно
           </span>
@@ -316,8 +317,8 @@
                 Свяжитесь со мной
               </span>
 
-              <div class="popover__button-wrapper">
-              </div>
+              <span class="popover__button-wrapper">
+              </span>
             </button>
           </div>
         </form>
@@ -411,13 +412,21 @@
         </a>
 
         <p class="main-footer__work-time">
-          Работаем <span class="main-footer__work-time main-footer__work-time--bold">с 11:00 до 21:00</span>
+          Работаем <span class="main-footer__work-time-bold">с 11:00 до 21:00</span>
         </p>
       </div>
     </footer>
+
+    <button class="page__btn-up btn-up btn-up--hide" type="button">
+      <span class="visually-hidden">
+        Кнопка возврата на вверх страницы
+      </span>
+    </button>
   </div>
 
   <script src="./js/main-nav-script.js"></script>
+  <script src="./js/popover.js"></script>
+  <script src="./js/btn-up.js"></script>
 </body>
 
 </html>

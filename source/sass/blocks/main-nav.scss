@@ -17,7 +17,7 @@
 
   &:hover,
   &:active {
-    opacity: 0.8;
+    opacity: 0.5;
   }
 
   @media (min-width: $desctop-width) {
@@ -153,6 +153,18 @@
   text-transform: lowercase;
   color: #bb3024;
 
+  &:hover {
+    font-size: 13px;
+    color: #bbb824;
+    transition: all 0.3s;
+  }
+
+  &:active {
+    color: #bb3024;
+    opacity: 0.6;
+    transition: none;
+  }
+
   @media (min-width: $desctop-width) {
     margin-left: 50px;
   }
@@ -163,6 +175,17 @@
   color: #353535;
   text-decoration: none;
   margin-bottom: 7px;
+
+  &:hover {
+    color: #bbb824;
+    transition: all 0.3s;
+  }
+
+  &:active {
+    color: #bb3024;
+    opacity: 0.6;
+    transition: none;
+  }
 }
 
 .main-nav__work-time {
@@ -191,11 +214,20 @@
   display: flex;
   justify-content: space-between;
   padding: 29px 0 44px;
+
+  @media (min-width: $desctop-width) {
+    padding: 0;
+    padding-top: 15px;
+  }
 }
 
 .main-nav--nojs .site-list {
   display: block;
   width: 100%;
+
+  @media (min-width: $desctop-width) {
+    display: flex;
+  }
 }
 
 .main-nav--nojs .site-list__item {

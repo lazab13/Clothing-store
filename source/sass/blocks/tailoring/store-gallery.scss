@@ -1,0 +1,150 @@
+.store-gallery {
+  display: none;
+
+  @media (min-width: $desctop-width) {
+    position: relative;
+    display: flex;
+    gap: 195px;
+    padding: 68px 295px 92px 292px;
+  }
+}
+
+.store-gallery__title {
+  position: absolute;
+  font-weight: 250;
+  font-size: 35px;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: linear-gradient(135deg, #100b08 0%, #550802 100%);
+  margin: 0;
+  padding: 82px 98px 230px 859px;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+
+.store-gallery__wrapper {
+  position: relative;
+  box-shadow: -4px 14px 39px 11px rgba(34, 60, 80, 0.25);
+}
+
+.store-gallery__image {
+  display: block;
+}
+
+.store-gallery__image--previous {
+  height: 100%;
+  object-fit: cover;
+}
+
+.store-gallery__image--next {
+  position: absolute;
+  top: 86px;
+  right: -150px;
+  z-index: -1;
+}
+
+.store-gallery__button-wrapper {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 348px;
+  top: 41%;
+  right: -105px;
+}
+
+.store-gallery__button-box {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.store-gallery__button {
+  position: relative;
+  width: 76px;
+  height: 76px;
+  border: none;
+  border-radius: 50%;
+  background-color: #bb3024;
+  box-shadow: (0 10px 31px rgba(187, 48, 36, 0.5));
+  cursor: pointer;
+
+  &:hover {
+    background-color: #000000;
+    box-shadow: 0 4px 25px 12px rgba(255, 255, 255, 0.27);
+    transition: all 0.5s;
+  }
+
+  &:hover + .store-gallery__text {
+    color: #000000;
+    transition: all 0.5s;
+  }
+
+  &:active {
+    opacity: 0.6;
+    transition: none;
+  }
+
+
+  &:active + .store-gallery__text {
+    opacity: 0.6;
+    transition: none;
+  }
+}
+
+.store-gallery__button::before {
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  height: 1px;
+  left: 24px;
+  top: 37px;
+  width: 25px;
+  transform: rotate(45deg);
+  transform-origin: bottom right;
+}
+
+.store-gallery__button::after {
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  height: 1px;
+  left: 24px;
+  top: 37px;
+  width: 25px;
+  transform: rotate(-45deg);
+  transform-origin: top right;
+}
+
+.store-gallery__text {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.store-gallery__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 29px;
+  row-gap: 21px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 101px;
+  margin-bottom: 23px;
+}
+
+.store-gallery__picture {
+  display: block;
+}
+
+.store-gallery__pagination {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+}

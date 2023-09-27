@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Бутик одежды итальянских брендов</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -132,14 +135,14 @@
               Artigiani</span>
           </p>
 
-          <a class="certificate-promo__link link link--open-popover" href="#">
+          <button class="certificate-promo__link link link--certificate-promo link--open-popover" type="button">
             <span class="link__text">
               Купить сертификат
             </span>
 
             <div class="link__wrapper">
             </div>
-          </a>
+          </button>
         </div>
       </section>
 
@@ -252,76 +255,79 @@
             </li>
           </ul>
 
-          <a class="certificate-advantages__link link link--open-popover link--certificate-advantages" href="#">
+          <button class="certificate-advantages__link link link--certificate-advantages link--open-popover"
+            type="button">
             <span class="link__text">
               Купить сертификат
             </span>
 
             <div class="link__wrapper link__wrapper--certificate-advantages">
             </div>
-          </a>
+          </button>
         </div>
       </section>
 
-      <section class="certificate-popover popover popover--closed popover--opened">
-        <h1 class="visually-hidden">
-          Форма записи
-        </h1>
+      <section class="certificate-popover popover popover--closed">
+        <div class="popover__wrapper">
+          <h1 class="visually-hidden">
+            Форма записи
+          </h1>
 
-        <button class="popover__toogle popover__toogle--closed">
-          <span class="visually-hidden">
-            Закрыть окно
-          </span>
-        </button>
+          <button class="popover__toogle popover__toogle--closed">
+            <span class="visually-hidden">
+              Закрыть окно
+            </span>
+          </button>
 
-        <form class="popover__form" action="https://echo.htmlacademy.ru/courses" method="get">
-          <h2 class="popover__title">
-            Оставьте свои данные<br> и наш консультант<br> свяжется с вами <span class="popover__title-bold">в течение
-              нескольких минут</span>
-          </h2>
+          <form class="popover__form" action="https://echo.htmlacademy.ru/courses" method="get">
+            <h2 class="popover__title">
+              Оставьте свои данные<br> и наш консультант<br> свяжется с вами <span class="popover__title-bold">в течение
+                нескольких минут</span>
+            </h2>
 
-          <fieldset class="popover__input">
-            <ul class="popover__list">
-              <li class="popover__item">
-                <label class="visually-hidden" for="user-name">
-                  Ваше имя
-                </label>
+            <fieldset class="popover__input">
+              <ul class="popover__list">
+                <li class="popover__item">
+                  <label class="visually-hidden" for="user-name">
+                    Ваше имя
+                  </label>
 
-                <input class="popover__user-input" type="text" name="user-name" id="user-name" placeholder="Ваше имя"
-                  required>
-              </li>
+                  <input class="popover__user-input" type="text" name="user-name" id="user-name" placeholder="Ваше имя"
+                    required>
+                </li>
 
-              <li class="popover__item">
-                <label class="visually-hidden" for="user-phone">
-                  Телефон
-                </label>
+                <li class="popover__item">
+                  <label class="visually-hidden" for="user-phone">
+                    Телефон
+                  </label>
 
-                <input class="popover__user-input" type="tel" name="user-phone" id="user-phone" placeholder="Телефон"
-                  required>
-              </li>
-            </ul>
-          </fieldset>
+                  <input class="popover__user-input" type="tel" name="user-phone" id="user-phone" placeholder="Телефон"
+                    required>
+                </li>
+              </ul>
+            </fieldset>
 
-          <div class="popover__box">
-            <label class="popover__radio-label" for="privacy-policy">
-              <input class="popover__radio-input visually-hidden" type="radio" name="privacy-policy" id="privacy-policy"
-                value="privacy-policy" checked>
+            <div class="popover__box">
+              <label class="popover__radio-label" for="privacy-policy">
+                <input class="popover__radio-input visually-hidden" type="radio" name="privacy-policy"
+                  id="privacy-policy" value="privacy-policy" checked>
 
-              <span class="popover__radio-text">
-                Я согласен с политикой конфиденциальности сайта
-              </span>
-            </label>
+                <span class="popover__radio-text">
+                  Я согласен с политикой конфиденциальности сайта
+                </span>
+              </label>
 
-            <button class="popover__button" type="submit">
-              <span class="popover__button-text">
-                Свяжитесь со мной
-              </span>
+              <button class="popover__button" type="submit">
+                <span class="popover__button-text">
+                  Свяжитесь со мной
+                </span>
 
-              <span class="popover__button-wrapper">
-              </span>
-            </button>
-          </div>
-        </form>
+                <span class="popover__button-wrapper">
+                </span>
+              </button>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
 

@@ -106,12 +106,25 @@
   }
 }
 
+.link--certificate-promo {
+  width: 100%;
+  cursor: pointer;
+
+  @media (min-width: $desctop-width) {
+    width: 398px;
+  }
+}
+
 .link--certificate-advantages {
+  width: 100%;
+  cursor: pointer;
+
   @media (min-width: $desctop-width) {
     position: absolute;
     font-size: 14px;
     line-height: 19px;
     gap: 66px;
+    width: 360px;
     padding: 68px 30px;
     border: none;
     border-radius: 0;

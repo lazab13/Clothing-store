@@ -10,6 +10,10 @@
 
 .promo__wrapper {
   padding: 0 24px;
+
+  @media (min-width: $desctop-width) {
+    width: 502px;
+  }
 }
 
 .promo__title {

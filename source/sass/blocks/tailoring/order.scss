@@ -157,6 +157,7 @@
   @media (min-width: $desctop-width) {
     position: static;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 79px 84px 79px 82px;

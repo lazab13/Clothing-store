@@ -93,7 +93,6 @@
 }
 
 .main-nav--opened .main-nav__container {
-  position: absolute;
   display: flex;
   justify-content: space-between;
   padding: 29px 24px 55px;
@@ -108,7 +107,9 @@
 
 .main-nav__wrapper {
   @media (min-width: $desctop-width) {
-    margin-right: 54px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 54px;
   }
 }
 
@@ -128,6 +129,7 @@
 }
 
 .main-nav__adress {
+  width: 254px;
   margin-top: 44px;
   margin-bottom: 15px;
 
@@ -150,6 +152,7 @@
   font-weight: 300;
   font-size: 11px;
   line-height: 18px;
+  width: 254px;
   text-transform: lowercase;
   color: #bb3024;
 

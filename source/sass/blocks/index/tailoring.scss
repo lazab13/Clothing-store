@@ -92,6 +92,7 @@
   @media (min-width: $desctop-width) {
     position: absolute;
     display: flex;
+    flex-wrap: wrap;
     bottom: 100px;
     left: 195px;
     z-index: 1;

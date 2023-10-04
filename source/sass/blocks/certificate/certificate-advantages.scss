@@ -10,7 +10,6 @@
 .certificate-advantages__box {
   @media (min-width: $desctop-width) {
     position: relative;
-    display: grid;
     background-color: #fbfbfb;
     padding: 58px 100px 161px;
     border: 0.7px solid #d9d9d9;
@@ -72,6 +71,7 @@
 .certificate-advantages__row {
   @media (min-width: $desctop-width) {
     display: flex;
+    flex-wrap: wrap;
     width: 910px;
     gap: 59px;
     margin-left: auto;

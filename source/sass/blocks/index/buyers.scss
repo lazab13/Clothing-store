@@ -51,6 +51,7 @@
   margin: 0 auto;
 
   @media (min-width: $desctop-width) {
+    align-self: flex-start;
     margin: 0;
   }
 }

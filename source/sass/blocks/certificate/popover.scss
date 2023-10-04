@@ -1,5 +1,16 @@
+
 .popover--closed {
-  display: none;
+  display: flex;
+  transform: scale(0.2);
+  transition: all 0.2s linear;
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
 }
 
 .popover--opened {
@@ -13,6 +24,10 @@
   background-color: rgb(0, 0, 0, 0.3);
   z-index: 10;
   overflow-y: auto;
+  transform: scale(1);
+  transition: all 0.2s linear;
+  opacity: 1;
+  visibility: visible;
 }
 
 .popover__wrapper {
@@ -160,6 +175,7 @@
 .popover__box {
   @media (min-width: $desctop-width) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
   }
@@ -228,6 +244,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: $muller;
   font-weight: 500;
   font-size: 14px;
   line-height: 19px;
@@ -284,6 +301,10 @@
   &:active .popover__button-wrapper::after {
     background-color: #ffffff;
   }
+}
+
+.popover__button-text {
+  width: 161px;
 }
 
 .popover__button-wrapper {

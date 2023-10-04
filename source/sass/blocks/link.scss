@@ -161,6 +161,20 @@
   }
 }
 
+.link__text {
+  width: 105px;
+}
+
 .link__text--promo {
   width: 188px;
+}
+
+.link__text--tailoring-promo,
+.link__text--order {
+  width: 206px;
+}
+
+.link__text--button {
+  font-family: $muller;
+  width: 180px;
 }

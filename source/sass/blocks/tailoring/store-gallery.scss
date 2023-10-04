@@ -27,6 +27,7 @@
 .store-gallery__wrapper {
   position: relative;
   box-shadow: -4px 14px 39px 11px rgba(34, 60, 80, 0.25);
+  height: 722px;
 }
 
 .store-gallery__image {
@@ -48,6 +49,7 @@
 .store-gallery__button-wrapper {
   position: absolute;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 348px;
   top: 41%;

@@ -1,0 +1,129 @@
+.collection {
+  padding: 0 24px 62px 24px;
+
+  @media (min-width: $desctop-width) {
+    position: relative;
+    padding: 0 195px 117px 195px;
+  }
+}
+
+.collection__title {
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 43px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #333333;
+  margin: 0;
+  margin-bottom: 27px;
+
+  @media (min-width: $desctop-width) {
+    font-weight: 250;
+    font-size: 55px;
+    line-height: 77px;
+    text-align: left;
+    color: #353535;
+    width: 975px;
+    margin-bottom: 47px;
+  }
+}
+
+.collection__gallery {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 15px;
+
+  @media (min-width: $desctop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 135px;
+    row-gap: 20px;
+  }
+}
+
+.collection__item--next {
+  display: none;
+
+  @media (min-width: $desctop-width) {
+    display: block;
+  }
+}
+
+.collection__image {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 50px;
+
+  @media (min-width: $desctop-width) {
+    margin: 0;
+    margin-bottom: 50px;
+  }
+}
+
+.collection__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #414141;
+  margin: 0;
+  margin-bottom: 60px;
+
+  @media (min-width: $desctop-width) {
+    margin: 0;
+  }
+}
+
+.collection__text-bold {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.collection__pagination {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 51px;
+
+  @media (min-width: $desctop-width) {
+    display: none;
+  }
+}
+
+.collection__link {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #bb3024;
+  width: 190px;
+  padding: 0 10px 14px 10px;
+  border-bottom: 1px solid #bb3024;
+  margin: 0 auto;
+
+  @media (min-width: $desctop-width) {
+    position: absolute;
+    top: 35px;
+    right: 240px;
+    margin: 0;
+  }
+
+  &:hover {
+    color: #42423e;
+    border-bottom: 1px solid #42423e;
+    transition: all 0.3s;
+  }
+
+  &:active {
+    color: #bb3024;
+    border-bottom: 1px solid #bb3024;
+    opacity: 0.6;
+    transition: none;
+  }
+}

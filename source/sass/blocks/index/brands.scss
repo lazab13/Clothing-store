@@ -1,0 +1,32 @@
+.brands {
+  padding-bottom: 40px;
+
+  @media (min-width: $desctop-width) {
+    position: relative;
+    padding-bottom: 75px;
+  }
+}
+
+.brands::before {
+  @media (min-width: $desctop-width) {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 50%;
+    left: 196px;
+    top: -106px;
+    background-color: #d4d1d1;
+  }
+}
+
+.brands::after {
+  @media (min-width: $desctop-width) {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 57%;
+    right: 195px;
+    top: -238px;
+    background-color: #d4d1d1;
+  }
+}

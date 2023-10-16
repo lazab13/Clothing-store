@@ -1,0 +1,83 @@
+.promo {
+  padding: 0;
+  padding-bottom: 40px;
+
+  @media (min-width: $desctop-width) {
+    padding: 0;
+    margin-left: 195px;
+  }
+}
+
+.promo__wrapper {
+  padding: 0 24px;
+
+  @media (min-width: $desctop-width) {
+    width: 502px;
+  }
+}
+
+.promo__title {
+  font-size: 36px;
+  font-weight: 250;
+  line-height: 43px;
+  text-transform: uppercase;
+  color: #353535;
+  margin: 0;
+  margin-bottom: 17px;
+
+  @media (min-width: $desctop-width) {
+    font-size: 55px;
+    line-height: 77px;
+    margin-top: 183px;
+    margin-bottom: 15px;
+    width: 454px;
+  }
+}
+
+.promo__text {
+  font-size: 20px;
+  line-height: 24px;
+  color: #bb3024;
+  margin: 0;
+  margin-bottom: 29px;
+
+  @media (min-width: $desctop-width) {
+    display: none;
+  }
+}
+
+.promo__text-desctop {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
+  color: #bb3024;
+  margin: 0;
+  display: none;
+
+  @media (min-width: $desctop-width) {
+    display: block;
+    margin-bottom: 41px;
+  }
+}
+
+.promo__link {
+  display: none;
+
+  @media (min-width: $desctop-width) {
+    display: flex;
+    margin-bottom: 60px;
+  }
+}
+
+.promo__address {
+  @media (min-width: $desctop-width) {
+    display: none;
+  }
+}
+
+.promo__map {
+  display: block;
+  width: 100%;
+  height: 161px;
+  border: 0;
+}

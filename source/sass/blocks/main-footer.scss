@@ -26,6 +26,14 @@
     margin-right: 51px;
     padding: 32px 0 47px 0;
   }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .main-footer__nav {
@@ -71,6 +79,17 @@
   margin: 0 auto;
   margin-bottom: 28px;
 
+  &:hover {
+    color: #bbb824;
+    transition: all 0.3s;
+  }
+
+  &:active {
+    color: #bb3024;
+    opacity: 0.6;
+    transition: none;
+  }
+
   @media (min-width: $desctop-width) {
     margin: 0;
   }
@@ -109,6 +128,17 @@
     width: 130px;
     margin: 0;
   }
+
+  &:hover {
+    color: #bbb824;
+    transition: all 0.3s;
+  }
+
+  &:active {
+    color: #bb3024;
+    opacity: 0.6;
+    transition: none;
+  }
 }
 
 .main-footer__work-time {
@@ -123,6 +153,6 @@
   }
 }
 
-.main-footer__work-time--bold {
+.main-footer__work-time-bold {
   font-weight: 500;
 }

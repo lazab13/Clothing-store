@@ -8,6 +8,7 @@
 
   @media (min-width: $desctop-width) {
     gap: 13px;
+    width: 150px;
   }
 }
 
@@ -17,5 +18,17 @@
   @media (min-width: $desctop-width) {
     order: 1;
     margin: 0;
+  }
+}
+
+.social__link {
+  display: block;
+
+  &:hover svg {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.5;
   }
 }

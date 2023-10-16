@@ -1,0 +1,108 @@
+.certificate {
+  padding: 0 24px 130px 24px;
+
+  @media (min-width: $desctop-width) {
+
+    padding: 0;
+    padding-bottom: 78px;
+  }
+}
+
+
+.certificate__wrapper {
+  position: relative;
+  background: linear-gradient(180deg, #b6a6a6da 14%, #fd1d1dd1 40%, #000000 91%);
+
+  @media (min-width: $desctop-width) {
+    display: flex;
+    background-image: url("../img/index/certificate-bacground.png");
+    background-color: #918888;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 188px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/certificate-bacground@2x.png");
+    }
+  }
+}
+
+.certificate__llayout {
+  @media (min-width: $desctop-width) {
+    order: 1;
+  }
+}
+
+.certificate__title {
+  font-weight: 250;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+  padding: 30px 20px 0 20px;
+  margin-bottom: 15px;
+
+  @media (min-width: $desctop-width) {
+    font-size: 35px;
+    line-height: 39px;
+    text-align: left;
+    width: 800px;
+    margin-top: 58px;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+}
+
+.certificate__title br {
+  display: none;
+
+  @media (min-width: $desctop-width) {
+    display: block;
+  }
+}
+
+.certificate__title-bold {
+  font-weight: 700;
+}
+
+.certificate__text {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+  padding: 0 20px;
+  margin-bottom: 49px;
+
+  @media (min-width: $desctop-width) {
+    text-align: left;
+    width: 800px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.certificate__image {
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: $desctop-width) {
+    width: 1412px;
+    margin: 0;
+  }
+}
+
+.certificate__link {
+  position: absolute;
+  bottom: -90px;
+  width: 100%;
+
+  @media (min-width: $desctop-width) {
+    width: 398px;
+    bottom: -65px;
+    right: 25%;
+  }
+}
